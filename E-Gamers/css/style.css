@@ -1,0 +1,41 @@
+/*Utilizar o figma como parâmetro*/
+/*Código padrão do css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-grid{ /*Utilizar ponto para classes*/
+width: 1200px;
+margin: 0 auto;
+}
+
+.cabecalho{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu{ /*Distância entre os links e a logo*/
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu a{
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+header{
+    background-color: black; /*Cor de fundo do cabeçalho*/
+    height: 82px; /*Informação do figma*/
+    padding-top: 20px; /*Espaçamento entre a logo e o topo do cabeçalho*/
+}
+
+a{
+    color: chartreuse; /*Todos os caracteres ficam com essa cor*/
+}
