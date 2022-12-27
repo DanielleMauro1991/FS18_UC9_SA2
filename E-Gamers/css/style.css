@@ -1,6 +1,8 @@
 /*Utilizar o figma como parâmetro*/
-/*Código padrão do css*/
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap'); /*Fonte baixada do Google*/
+@import url('https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Tiro+Devanagari+Hindi&display=swap')
+
+*{ /*Código padrão do css*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,9 +26,11 @@ margin: 0 auto;
     justify-content: space-between;
 }
 .menu a{
-    color: aliceblue;
+    color:#E9D204;
     text-decoration: none;
     text-transform: uppercase;
+    font-family: Roboto; /*Chama a fonte Roboto*/
+    font-size: 35px;
 
 }
 
@@ -38,4 +42,28 @@ header{
 
 a{
     color: chartreuse; /*Todos os caracteres ficam com essa cor*/
+}
+
+.banner{
+    height: 603px;
+    position: absolute;
+    width: 100%;
+    background-image:url(../img/banner-zelda.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+}
+
+.conteudo-banner h1{
+    color: black;
+    font-size: 80px;
+    font-family: Tiro+Devanagari+Hindi;
+    text-decoration: none;
+}
+.conteudo-banner p{
+    color: black;
+    font-size: 30px;
+    font-family: Roboto;
+    text-decoration: none;
 }
