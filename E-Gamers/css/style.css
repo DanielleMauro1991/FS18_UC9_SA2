@@ -46,7 +46,7 @@ a{
 
 .banner{
     height: 603px;
-        width: 100%;
+    width: 100%;
     background-image:url(../img/banner-zelda.webp);
     background-repeat: no-repeat;
     background-position: center;
@@ -79,6 +79,5 @@ a{
 .posicionamento-banner{
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    height: 100%;
+   
 }
