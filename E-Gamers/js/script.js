@@ -1,6 +1,37 @@
-//Comando inicial do Jquery//
 
-$(document).ready(function(){ //Função generica, não necessita de nome//
+
+$(document).ready(function(){  //Comando inicial do Jquery//
+
+    //Comando para carrossel//
+    
+    let slideAtual = 1
+    let listaSlides = ["banner-fifa", "banner-zelda", "banner-lol"]
+  
+    setInterval(mudarSlide, 5000)
+  
+    function mudarSlide(){
+        //remover slide anterior
+        if(slideAtual > 0){
+            $("#carrossel").removeClass(listaSlides[slideAtual - 1])
+        }else{
+            $("#carrossel").removeClass(listaSlides[listaSlides.length - 1])
+        }      
+        
+  
+        //exibir slide atual
+        $("#carrossel").addClass(listaSlides[slideAtual])
+  
+        //indicar qual slide atual
+        console.log("Slide atual é", slideAtual)
+        slideAtual ++
+  
+        if(slideAtual > listaSlides.length - 1){
+            slideAtual = 0
+        }
+  
+    }
+
+
     $("#barras").click(function(){
         if($("#menu").hasClass("menu-ativo")){
             $("#menu").removeClass("menu-ativo")

@@ -52,14 +52,26 @@ a{
     color: chartreuse; /*Todos os caracteres ficam com essa cor*/
 }
 
-.banner{ /*Configuração do banner (imagem)*/
+.banner{ /*Configuração do banner no geral (imagem)*/
     height: 603px;
     width: 100%;
-    background-image:url(../img/banner-zelda.webp);
+    /*background-image:url(../img/banner-zelda.webp);*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
    
+}
+
+.banner-fifa{
+    background-image: url(../img/banner-fifa.jpg);
+}
+
+.banner-zelda{
+    background-image: url(../img/banner-zelda.webp);
+}
+
+.banner-lol{
+    background-image: url(../img/banner-lol.webp);
 }
 
 .conteudo-banner h1{ /*Configuração do título*/
@@ -145,7 +157,7 @@ a{
     .menu-ativo{ /*Configuração para ativar o Jquery menu ativo*/
         display: flex;
     }
-    
+
     .menu a{
         font-size: 20px;
     }
