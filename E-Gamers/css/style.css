@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap'); /*Fonte baixada do Google*/
 @import url('https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Tiro+Devanagari+Hindi&display=swap')
 
-*{ /*Código padrão do css*/
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -44,7 +44,7 @@ a{
     color: chartreuse; /*Todos os caracteres ficam com essa cor*/
 }
 
-.banner{
+.banner{ /*Configuração do banner (imagem)*/
     height: 603px;
     width: 100%;
     background-image:url(../img/banner-zelda.webp);
@@ -54,30 +54,29 @@ a{
    
 }
 
-.conteudo-banner h1{
+.conteudo-banner h1{ /*Configuração do título*/
     color: black;
-    font-size: 80px;
+    font-size: 100px;
     font-family: Tiro+Devanagari+Hindi;
     text-decoration: none;
 }
-.conteudo-banner p{
+.conteudo-banner p{ /*Configuração do parágrafo*/
     color: black;
     font-size: 30px;
-    font-family: Roboto;
-    text-decoration: none;
-}
-
-.conteudo-banner {
-    width: 518px;
+    font-family: Roboto;}
+ 
+.conteudo-banner { /*Configuração do Título e Parágrafo como um todo*/
+    width: 540px;
     height: 142px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     justify-content: space-between;
 }
 
-.posicionamento-banner{
+.posicionamento-banner{ /*Configuração da posição do Título+Paragrafo no banner*/
     display: flex;
     justify-content: flex-end;
-   
-}
+    align-items: center;  
+    height: 100%;
+   }
