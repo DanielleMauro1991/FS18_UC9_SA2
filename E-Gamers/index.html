@@ -21,34 +21,42 @@
 <!--src= caminho para o arquivo; alt= inclusão-->
 <!--Transformando a logo em um Link-->
 
-        <nav class="menu"><!--Links de navegação-->
+        <nav id= "menu" class="menu"><!--Links de navegação-->
             <a href="index.html">INICIO</a><!--Para gerar link usar comando a href=""-->
             <a href="pages/contato.html">CONTATO</a>
             <a href="pages/noticias.html">NOTÍCIAS</a>
-
         </nav>
-         </div>
+
+        <!--Criação do menu barras para menu hamburger-->
+        <a onclick= "mostrarmenu(event)" href="" id="barras"><img class= "icone-menu" src="img/bars.svg" alt="Menu de barras"></a>
+        <!--função onclick, ao clicar aciona o comando-->
+
+        </div>
+
     </header>
     <section class="banner">
         <div class="container-grid posicionamento-banner">
             <div class="conteudo-banner">
            <h1>E-GAMERS</h1>        
-            <p>SITE DE VENDA DE GAMES NOVOS E USADOS E AFINIDADES</p>
-           
-        </div>
-
+           <p>SITE DE VENDA DE GAMES NOVOS E USADOS E AFINIDADES</p>
+            </div>
         </div>
 
     </section>
 
     <section class="jogos">
-        <div>
-            
+        <div class="container posicionamento-jogos">
+           <a href="">Playstation</a>
+           <a href="">Xbox</a>
+           <a href="">Nintendo</a>
+           <a href="">Clássicos</a>
         </div>
     </section>
 
     <!--Seção Javascript-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="js/script.js"></script> <!--Lincando a pasta js-->
+</script>
+
 </body>
 </html>

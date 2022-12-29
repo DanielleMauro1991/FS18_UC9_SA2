@@ -9,8 +9,12 @@
 }
 
 .container-grid{ /*Utilizar ponto para classes*/
-width: 1200px;
-margin: 0 auto;
+     width: 1200px;
+    margin: 0 auto;
+}
+
+#barras{
+    display: none; /*Comando para aparecer somente no menu hamburguer*/
 }
 
 .cabecalho{
@@ -20,18 +24,22 @@ margin: 0 auto;
     justify-content: space-between;
 }
 
+.icone-menu{
+    height: 40px;
+}
+
 .menu{ /*Distância entre os links e a logo*/
     width: 700px;
     display: flex;
     justify-content: space-between;
 }
+
 .menu a{
     color:#E9D204;
     text-decoration: none;
     text-transform: uppercase;
     font-family: Roboto; /*Chama a fonte Roboto*/
     font-size: 35px;
-
 }
 
 header{
@@ -79,4 +87,62 @@ a{
     justify-content: flex-end;
     align-items: center;  
     height: 100%;
-   }
+}
+
+.jogos{ /*Posicionamento da barra de jogos*/
+    background-color: black;
+    height: 121px;
+}
+
+.jogos a{ /*Configuração de Links de jogos*/
+    color: #E9D204;
+    font-family: Roboto;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.posicionamento-jogos{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+@media screen and (max-width: 1200px) {/*Responsividade de acordo com o tamanho de tela*/
+    .container-grid{
+        width: 1000px;
+    }
+}
+
+/*Menu hamburguer*/
+@media screen and (max-width: 1000px) {
+    .container-grid{
+        width: 800px;
+    }
+    
+    #barras{ /*Inclusão do menu barras para que apareça somente no menu hamburguer*/
+        display: inline-block;
+    }
+
+    .cabecalho{
+        position: relative;
+    }
+
+    .menu{
+        display: none; /*Comando para que o menu apareça não sobrepondo o menu barras*/
+        position: absolute;
+        top: 91px;
+        right: 0px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        background-color: black;
+        height: 300px;
+    }
+
+    .menu a{
+        font-size: 20px;
+    }
+}
