@@ -75,13 +75,13 @@ a{
 }
 
 .conteudo-banner h1{ /*Configuração do título*/
-    color: black;
+    color: #E9D204;
     font-size: 100px;
     font-family: Tiro+Devanagari+Hindi;
     text-decoration: none;
 }
 .conteudo-banner p{ /*Configuração do parágrafo*/
-    color: black;
+    color: #E9D204;
     font-size: 30px;
     font-family: Roboto;}
  
